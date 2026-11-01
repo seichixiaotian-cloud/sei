@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 
@@ -79,4 +80,5 @@ async def on_message(message):
 
 
 # ご自身のボットのトークンに書き換えてください
-bot.run("MTU2NjEzMDkxMjMwMTY4MjY5OA.GOPIer.3XA65BkPEeq30rHILlvU5ApI2NfyKY-r-_z50c")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
